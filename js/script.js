@@ -113,7 +113,6 @@ var handleEquals = function () {
 		case "-":
 		result = subtract(parseFloat(operand1), parseFloat(operand2));
 		break;
-
 	}
 	operand1 = result;
 	operand2 = "";
