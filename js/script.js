@@ -16,12 +16,6 @@ var divide = function (num1, num2) {
 	return num1 / num2
 }
 
-// DISPLAY RESULT
-
-var display = function (result) {
-	$(".screen").html(result);
-}
-
 // VARIABLES
 
 var operand1 = "";
@@ -29,7 +23,7 @@ var operand2 = "";
 var operator = "";
 var computed = false;
 
-// ADD EVENT LISTENER
+// ADD EVENT LISTENERS FOR BUTTONS
 
 var buttons = $(".button");
 for (var i = 0; i < buttons.length; i++)  {
@@ -125,4 +119,10 @@ var handleClear = function () {
 	operand2 = "";
 	operator = "";
 	display("");
+}
+
+// DISPLAY RESULT
+
+var display = function (result) {
+	$(".screen").html(result);
 }
